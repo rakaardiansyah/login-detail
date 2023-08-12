@@ -1,0 +1,442 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test Barantum</title>
+    <meta name="description" content="Test Barantum">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
+
+    <style>
+        #weatherWidget .currentDesc {
+            color: #ffffff!important;
+        }
+            .traffic-chart {
+                min-height: 335px;
+            }
+            #flotPie1  {
+                height: 150px;
+            }
+            #flotPie1 td {
+                padding:3px;
+            }
+            #flotPie1 table {
+                top: 20px!important;
+                right: -10px!important;
+            }
+            .chart-container {
+                display: table;
+                min-width: 270px ;
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            #flotLine5  {
+                height: 105px;
+            }
+
+            #flotBarChart {
+                height: 150px;
+            }
+            #cellPaiChart{
+                height: 160px;
+            }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="page-body" class="page-body">
+
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="top-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./page-login.html"><img src="images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./page-login.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="header-menu">
+                    <div class="header-left">
+                        <a class="text-header" href="#!">Dashboard</a>
+                        <a class="text-header" href="#!">Contact</a>
+                        <a class="text-header" href="#!">Activity</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- Breadcrumbs-->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-inner">
+                <div class="row m-0">
+                    <div class="col-sm-4">
+                        <div class="page-header float-left">
+                            <div class="page-title">
+                                <h1>Contacts</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="page-header float-right">
+                            <div class="page-title">
+                                <ol class="breadcrumb text-right">
+                                    <li><a href="#">Listing</a></li>
+                                    <li><a href="#"> details</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.breadcrumbs-->
+
+        <!-- Content -->
+        <div class="content">
+            <div class="animated fadeIn">
+                <div class="ui-typography">
+                    <div class="row">
+                        <div class="col-sm-12 col-xl-6">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="card">
+                                <div class="card-body">
+                                    <div class="row mb-4">
+                                        <div class="col-lg-3">
+                                            <div class="input-group">
+                                                <img class="center" style="width:90px; height:90px;" alt="" src="images/avatar/woman.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="form-group media-body">
+                                                <h2 class="control-label mb-1">Rara Kartika</h2>
+                                            </div>
+                                            <div class="form-group media-body">
+                                                <h4 class="control-label mb-1">PT test 10 Indonesia</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-0">
+                                        <div class="col-lg-4">
+                                            <section class="card">
+                                                <button type="button" class="btn btn-lg">Check In</button>
+                                            </section>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <section class="card">
+                                                <button type="button" class="btn btn-lg">Call</button>
+                                            </section>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <section class="card">
+                                                <button type="button" class="btn btn-lg">Email</button>
+                                            </section>
+                                        </div>
+                                    </div> 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="page-header float-left">
+                                                <div class="page-title">
+                                                    <h4 class="mt-2">
+                                                        <strong class="card-title" v-if="headerText">Profile Contact</strong>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <form class="theme-form">
+                                    <div class="form-group row">
+                                      <label class="col-sm-3 col-form-label">Phone Number</label>
+                                      <div class="col-sm-9">
+                                        <label class="col-form-label">083484845454</label>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                      <label class="col-sm-3 col-form-label">Email Address</label>
+                                      <div class="col-sm-9">
+                                        <label class="col-form-label">rara@gmail.com</label>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                      <label class="col-sm-3 col-form-label">Address</label>
+                                      <div class="col-sm-9">
+                                        <label class="col-form-label">Jl. kembangan, jakarta barat</label>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                      <label class="col-sm-3 col-form-label">Job Title</label>
+                                      <div class="col-sm-9">
+                                        <label class="col-form-label">Sales Manager</label>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                      <label class="col-sm-3 col-form-label">Company</label>
+                                      <div class="col-sm-9">
+                                        <label class="col-form-label">PT Test 10 Indonesia</label>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Website</label>
+                                        <div class="col-sm-9">
+                                            <label class="col-form-label">-</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Source</label>
+                                        <div class="col-sm-9">
+                                            <label class="col-form-label">-</label>
+                                        </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="page-header float-left">
+                                                    <div class="page-title">
+                                                        <h5 class="mt-2">Email Address</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="page-header float-right">
+                                                    <div class="page-title">
+                                                        <button type="button" class="btn btn-lg"><i class="fa fa-plus" aria-hidden="true"></i> Setujui</button> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form class="theme-form">
+                                            <div class="form-group">
+                                                <label class="mb-4 mt-4" >No Document</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Type Activity</label>
+                                                <select name="select" id="select" class="form-control">
+                                                    <option value="0">Call</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Subject</label>
+                                                <input id="subjectbr" name="subjectbr" type="text" class="form-control subjectbr" value="" placeholder="">
+                                                <span class="" data-valmsg-for="subjectbr" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Date Start</label>
+                                                <select name="select" id="select" class="form-control">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Date End</label>
+                                                <select name="select" id="select" class="form-control">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Description</label>
+                                                <textarea name="textarea-input" id="textarea-input" rows="3" placeholder="Description" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Status</label>
+                                                <select name="select" id="select" class="form-control">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Priority</label>
+                                                <select name="select" id="select" class="form-control">
+                                                    <option value="0">Please select</option>
+                                                    <option value="1">Option #1</option>
+                                                    <option value="2">Option #2</option>
+                                                    <option value="3">Option #3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="control-label mb-1">Image Address</label>
+                                                <textarea name="textarea-input" id="textarea-input" rows="3" placeholder="Upload" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="row mb-0">
+                                                <div class="col-lg-6">
+                                                    <section class="card">
+                                                        
+                                                    </section>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <section class="card">
+                                                        <button type="button" class="btn btn-lg">Save</button>
+                                                    </section>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <section class="card">
+                                                        <button type="button" class="btn btn-lg">Cancel</button>
+                                                    </section>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row mb-3">
+                                    <div class="col-sm-4">
+                                        <div class="page-header float-left">
+                                            <div class="page-title">
+                                                <h5 class="mt-2">Email Address</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="page-header float-right">
+                                            <div class="page-title">
+                                                <select class="button btn btn-primary">
+                                                    <option>All Activity</option>
+                                                    <option>Satu</option>
+                                                    <option>Dua</option>
+                                                </select>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <form class="theme-form">
+                                            <div class="form-group">
+                                                <label class="mb-4 mt-4" >No Document</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.content -->
+
+        <div class="clearfix"></div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-inner bg-white">
+                <div class="row">
+                    <div class="col-sm-6">
+                        Copyright &copy; 2023 RakaArd
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        Redesigned by <a href="#">RakaArd</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /.site-footer -->
+
+    </div>
+    <!-- /#page-body -->
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--  Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
+    <!--Flot Chart-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
+    <!-- local -->
+    <script src="assets/js/widgets.js"></script>
+
+</body>
+
+</html>
